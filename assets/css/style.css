@@ -1,0 +1,103 @@
+/* ----------------- */
+/*      Root         */
+/* ----------------- */
+:root {
+    --qr-background: #F2F5F9;
+    --qr-circle: #F8FAFC1A;
+    --text-color: #FAFAF9;
+    --primary-button: #263FA9;
+    --input-background: #030616;
+    --primary-background: #111629;
+
+}
+
+/* ----------------- */
+/*   Basic Style     */
+/* ----------------- */
+
+/* Universal Tag */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    background-color: var(--primary-background);
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    background-image: url(../images/qa-bg-small.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 150%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 0px 1rem;
+
+    height: 100%;
+}
+.logoContainer {
+    background-image: url(../images/Logo-small.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 20rem;
+    height: 2rem;
+}
+form {
+    background-color: var(--input-background);
+
+    border: 2px solid var(--primary-button);
+    border-radius: 1em;
+
+    padding: 4px;
+
+    min-width: 410px;
+}
+input {
+    width: 18rem;
+    font-size: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.3rem;
+
+    outline: none;
+    
+    color: var(--text-color);
+    background-color: var(--input-background);
+}
+input::placeholder {
+    color: var(--text-color);
+}
+
+button {
+    padding: 1em 2em;
+
+    color: var(--text-color);
+    background-color: var(--primary-button);
+
+    border-radius: 1em;
+}
+button:hover {
+    cursor: pointer;
+}
+
