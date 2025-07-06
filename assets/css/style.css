@@ -65,17 +65,22 @@ main {
     height: 2rem;
 }
 form {
-    background-color: var(--input-background);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
 
+    background-color: var(--input-background);
     border: 2px solid var(--primary-button);
     border-radius: 1em;
-
     padding: 4px;
 
-    min-width: 410px;
+    width: 100%;
 }
 input {
-    width: 18rem;
+    flex: 1;
+    min-width: 0px;
+
     font-size: 1rem;
     padding-left: 0.8rem;
     padding-right: 0.3rem;
@@ -90,6 +95,8 @@ input::placeholder {
 }
 
 button {
+    flex-shrink: 0;
+    white-space: nowrap;
     padding: 1em 2em;
 
     color: var(--text-color);
