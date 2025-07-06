@@ -3,7 +3,6 @@
     main {
         background-image: url(../images/qa-bg.jpg);
 
-        gap: 2rem;
     }
     .logoContainer {
         background-image: url(../images/Logo.svg);
@@ -28,7 +27,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  gap: 2rem;
 }
 
     .logoContainer {
