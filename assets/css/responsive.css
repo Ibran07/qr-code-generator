@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+
+    main {
+        background-image: url(../images/qa-bg.jpg);
+
+        gap: 2rem;
+    }
+    .logoContainer {
+        background-image: url(../images/Logo.svg);
+        
+        min-height: 2.5rem;
+    }
+    form {
+        min-width: 29rem;
+    }
+    input {
+        min-width: 16rem;
+    }
+    button {
+        padding: 1rem 1.5rem;
+    }
+}
+@media (min-width: 1024px) {
+
+    main {
+  background-image: url(../images/qa-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  gap: 2rem;
+}
+
+    .logoContainer {
+        background-image: url(../images/Logo.svg);
+        
+        min-height: 2.5rem;
+    }
+    form {
+        min-width: 29rem;
+    }
+    input {
+        min-width: 16rem;
+    }
+    button {
+        padding: 1rem 1.5rem;
+    }
+}
