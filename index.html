@@ -6,6 +6,7 @@
     <title>QR Code Generator</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
@@ -15,13 +16,24 @@
                 <form action="#">
                     <input type="url" name="url" id="url"
                     placeholder="Enter an url" required autofocus>
-                    <button type="submit">QR code</button>
+                    <button type="submit" id="qrCode">QR code</button>
                 </form>
             </div>
         </div>
 
-        
+
         <div class="qrContainer">
+            <div class="qrLogo"></div>
+
+            <div class="qrScanContainer">
+                <div class="qrCircle"></div>
+                <div class="qrimage"></div>
+            </div>
+
+            <div class="btnContainer">
+                <button type="button" id="download" class="btnLogo">Download <i class="fa-solid fa-arrow-down" style="color: #FAFAF9;"></i></button>
+                <button type="button" id="share" class="btnLogo">Share <i class="fa-solid fa-share" style="color: #FAFAF9;"></i></button>
+            </div>
         </div>
     </main>
 

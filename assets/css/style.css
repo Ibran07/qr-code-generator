@@ -119,4 +119,74 @@ button {
 button:hover {
     cursor: pointer;
 }
+/* ------------------------- */
+/*      QR Container         */
+/* ------------------------- */
+.qrContainer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qrLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    background-image: url(../images/Logo-small.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    height: 2rem;
+    aspect-ratio: 19/4;
+
+    padding: 1em;
+
+    position: absolute;
+    top: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.qrScanContainer {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qrCircle {
+    background-color: var(--qr-circle);
+    width: 15rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+}
+.qrimage {
+    background-image: url(../images/Screenshot\ 2025-07-07\ 134447.png);
+
+    width: 11.7rem;
+    aspect-ratio: 1/1;
+
+    position: relative;
+    z-index: 2;
+
+    border: 1rem solid var(--qr-background);
+    border-radius: 1em;
+    padding: 0.5rem;
+}
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    position: absolute;
+    bottom: 10vh;
+}
+.btnLogo {
+    display: flex;
+    gap: 1em;
+}
