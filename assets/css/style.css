@@ -164,9 +164,7 @@ button:hover {
     position: absolute;
     z-index: 1;
 }
-.qrimage {
-    background-image: url(../images/Screenshot\ 2025-07-07\ 134447.png);
-
+.qrImage {
     width: 11.7rem;
     aspect-ratio: 1/1;
 
@@ -175,7 +173,6 @@ button:hover {
 
     border: 1rem solid var(--qr-background);
     border-radius: 1em;
-    padding: 0.5rem;
 }
 .btnContainer {
     display: flex;
