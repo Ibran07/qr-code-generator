@@ -35,7 +35,7 @@ function download() {
     const img = qrImage.querySelector("img");
 
     if (!img){
-        console.log("QR Code is not generator yet!");
+        alert("QR Code is not generator yet!");
         return;
     }
 
@@ -44,3 +44,29 @@ function download() {
     link.download = "QR-Code";
     link.click();
 }
+
+shareBtn.addEventListener("click", async () => {
+    const img = qrImage.querySelector("img");
+    if (!img) {
+        alert("QR Code is not generator yet!");
+        return;
+    }
+
+    try {
+        const response = await fetch(img.src);
+        const blob = await response.blob();
+        const file = new File([blob], "qr-code.png", { type: "image/png" });
+
+        if (navigator.canShare && navigator.canShare({files: [file] })) {
+            await navigator.share({
+                files: [file],
+                type: "QR code",
+                text: "Scan this code",
+            })
+        }else{
+            alert("Sharing does not supported in this device");
+        }
+    }catch(err){
+        console.log(err);
+    }
+})
