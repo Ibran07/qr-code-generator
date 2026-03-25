@@ -21,7 +21,6 @@
     padding: 0px;
     box-sizing: border-box;
     border: none;
-    transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -118,6 +117,7 @@ button {
 }
 button:hover {
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 /* ------------------------- */
 /*      QR Container         */
